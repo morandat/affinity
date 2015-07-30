@@ -1,4 +1,4 @@
-package fr.labri.jazzy;
+package fr.labri;
 
 
 import java.util.concurrent.ThreadFactory;
@@ -9,9 +9,9 @@ import com.sun.jna.ptr.LongByReference;
 import com.sun.jna.ptr.NativeLongByReference;
 
 final public class ThreadAffinity {
-    public static final boolean DEBUG = Boolean.parseBoolean(System.getProperty("jazzy.affinity.debug", "false"));
-//    public static final int PID_T_SIZE = Integer.getInteger("jazzy.affinity.pidt", Integer.SIZE / 8);
-//    public static final int TID_T_SIZE = Integer.getInteger("jazzy.affinity.tidt", Long.SIZE / 8);
+    public static final boolean DEBUG = Boolean.parseBoolean(System.getProperty("affinity.debug", "false"));
+//    public static final int PID_T_SIZE = Integer.getInteger("affinity.pidt", Integer.SIZE / 8);
+//    public static final int TID_T_SIZE = Integer.getInteger("affinity.tidt", Long.SIZE / 8);
 
     private static final ThreadAffinityProvider _provider;
     
